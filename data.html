@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>People Data Table</h1>
+        <p>Search by name, age, or city. The table updates while you type.</p>
+
+        <div class="form-group">
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="Type to search...">
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="sort-name">Sort by Name</button>
+            <button type="button" id="sort-age">Sort by Age</button>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody id="people-table"></tbody>
+            </table>
+        </div>
+
+        <p id="no-results"></p>
+        <p><a href="validation.html">Go to Registration Form</a></p>
+    </main>
+</body>
+</html>
